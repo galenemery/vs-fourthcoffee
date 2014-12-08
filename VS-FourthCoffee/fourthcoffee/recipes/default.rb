@@ -22,7 +22,7 @@ include_recipe "fourthcoffee::#{node['fourthcoffee']['install_method']}"
 include_recipe "iis::remove_default_site"
 
 remote_directory node['fourthcoffee']['install_path'] do
-  source 'fourthcoffee'
+  source "#{Chef::Config[:file_cache_path]}\\fourthcoffee_site"
   # might need rights here
   action :create
 end

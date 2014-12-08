@@ -26,12 +26,12 @@
     <Compile Include="fourthcoffee\recipes\_dsc.rb" />
     <Compile Include="fourthcoffee\test\integration\default\serverspec\default_spec.rb" />
     <Compile Include="fourthcoffee\test\integration\default\serverspec\spec_helper.rb" />
-    <Compile Include="VS_FourthCoffee.rb" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fourthcoffee\.gitattributes" />
     <Content Include="fourthcoffee\.gitignore" />
     <Content Include="fourthcoffee\.kitchen.yml" />
+    <Content Include="fourthcoffee\.travis.yml" />
     <Content Include="fourthcoffee\Berksfile" />
     <Content Include="fourthcoffee\Berksfile.lock" />
     <Content Include="fourthcoffee\CHANGELOG.md" />

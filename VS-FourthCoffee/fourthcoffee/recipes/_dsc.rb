@@ -28,3 +28,15 @@ dsc_resource 'dotnet45' do
   property :name, 'Web-Asp-Net45'
   property :ensure, 'Present'
 end
+
+cookbook_file "fourthcoffee_site.zip" do
+  path "#{Chef::Config[:file_cache_path]}\\fourthcoffee_site.zip"
+  action :create_if_missing
+end
+
+dsc_resource 'get-dsc-resource-kit' do
+  resource_name :archive
+  property :ensure, 'Present'
+  property :path, "#{Chef::Config[:file_cache_path]}\\fourthcoffee_site.zip"
+  property :destination, "#{Chef::Config[:file_cache_path]}\\fourthcoffee_site"
+end
