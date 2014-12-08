@@ -28,7 +28,6 @@
     <Compile Include="fourthcoffee\test\integration\default\serverspec\spec_helper.rb" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".travis.yml" />
     <Content Include="fourthcoffee\.gitattributes" />
     <Content Include="fourthcoffee\.gitignore" />
     <Content Include="fourthcoffee\.kitchen.yml" />
