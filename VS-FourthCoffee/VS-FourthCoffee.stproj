@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <MainFile>VS_FourthCoffee.rb</MainFile>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>3.0</ProductVersion>
+    <ProjectGuid>9767cf3d-7bed-4127-b6bc-49fb12771e6a</ProjectGuid>
+    <RubyInterpreter>C:\HashiCorp\Vagrant\embedded\bin\ruby.exe</RubyInterpreter>
+    <RubyType>Ruby 2.0.0</RubyType>
+    <SapphireProjectType>Ruby</SapphireProjectType>
+    <UseMainFile>True</UseMainFile>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="VS_FourthCoffee.rb" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SapphireSteel Software\Sapphire_3_$(VisualStudioVersion)\Sapphire.targets" />
+</Project>

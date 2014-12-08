@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{3EF0E601-A88F-4504-97D7-836C4DAEC7E5}") = "VS-FourthCoffee", "VS-FourthCoffee\VS-FourthCoffee.stproj", "{9767CF3D-7BED-4127-B6BC-49FB12771E6A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AnyCPU = Debug|AnyCPU
+		Release|AnyCPU = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9767CF3D-7BED-4127-B6BC-49FB12771E6A}.Debug|AnyCPU.ActiveCfg = Debug|AnyCPU
+		{9767CF3D-7BED-4127-B6BC-49FB12771E6A}.Debug|AnyCPU.Build.0 = Debug|AnyCPU
+		{9767CF3D-7BED-4127-B6BC-49FB12771E6A}.Release|AnyCPU.ActiveCfg = Release|AnyCPU
+		{9767CF3D-7BED-4127-B6BC-49FB12771E6A}.Release|AnyCPU.Build.0 = Release|AnyCPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
