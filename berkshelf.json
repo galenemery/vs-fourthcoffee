@@ -1,8 +1,8 @@
 {
   "chef": {
-    "chef_server_url": "https://chef.theodi.org",
-    "client_key": "deploy/key.pem",
-    "node_name": "odi"
+    "chef_server_url": "https://api.opscode.com/organizations/galenemery",
+    "client_key": "deploy/galen-travis.pem",
+    "node_name": "galen-travis"
   },
   "ssl": {
     "verify": false

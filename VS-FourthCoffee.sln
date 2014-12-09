@@ -21,6 +21,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "support", "support", "{7DCC
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{9F96D093-5532-4029-9362-70A0ED930071}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\travis-ci\galen-travis.enc = ..\..\..\travis-ci\galen-travis.enc
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
