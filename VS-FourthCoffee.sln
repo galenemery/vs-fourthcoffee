@@ -5,6 +5,11 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{3EF0E601-A88F-4504-97D7-836C4DAEC7E5}") = "VS-FourthCoffee", "VS-FourthCoffee\VS-FourthCoffee.stproj", "{9767CF3D-7BED-4127-B6BC-49FB12771E6A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DEF11D37-89C4-40ED-B152-FCF67A3AAD5D}"
+	ProjectSection(SolutionItems) = preProject
+		.travis.yml = .travis.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AnyCPU = Debug|AnyCPU
