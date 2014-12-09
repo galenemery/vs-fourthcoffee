@@ -21,7 +21,7 @@ include_recipe "fourthcoffee::#{node['fourthcoffee']['install_method']}"
 
 include_recipe "iis::remove_default_site"
 
-cookbook_file "fourthcoffee\\fourthcoffee_site.zip" do
+cookbook_file "fourthcoffee_site.zip" do
   path "#{Chef::Config[:file_cache_path]}\\fourthcoffee_site.zip"
   action :create_if_missing
 end

@@ -33,7 +33,7 @@
     <Content Include="Berksfile" />
     <Content Include="Berksfile.lock" />
     <Content Include="CHANGELOG.md" />
-    <Content Include="files\default\fourthcoffee\fourthcoffee_site.zip" />
+    <Content Include="files\default\fourthcoffee_site.zip" />
     <Content Include="README.md" />
     <Content Include="test\support\Gemfile" />
     <Content Include="travis\berkshelf.json" />
