@@ -1,7 +1,7 @@
 {
   "chef": {
     "chef_server_url": "https://api.opscode.com/organizations/galenemery",
-    "client_key": "VS-FourthCoffee/travis/galen-travis/galen-travis.pem",
+    "client_key": "travis/galen-travis.pem",
     "node_name": "galen-travis"
   },
   "ssl": {
