@@ -4,4 +4,4 @@ rvm:
 gemfile:
   - VS-FourthCoffee/test/support/Gemfile
 # uncomment this line if your project needs to run something other than `rake`:
-script: bundle exec foodcritic --cookbook-path VS-FourthCoffee
+script: bundle exec foodcritic --cookbook-path VS-FourthCoffee/.
