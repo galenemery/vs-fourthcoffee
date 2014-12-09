@@ -1,13 +1,16 @@
 language: ruby
 rvm:
-  - "2.0.0"
+- 2.0.0
 gemfile:
-  - VS-FourthCoffee/test/support/Gemfile
-# uncomment this line if your project needs to run something other than `rake`:
+- VS-FourthCoffee/test/support/Gemfile
 script: bundle exec foodcritic --cookbook-path VS-FourthCoffee/.
 after_success:
-- openssl enc -d -aes-256-cbc -k EeIa4Yk3FQ8c5y9y -in VS-FourthCoffee/travis/galen-travis.enc -out VS-FourthCoffee/travis/galen-travis.pem
+- openssl enc -d -aes-256-cbc -k EeIa4Yk3FQ8c5y9y -in VS-FourthCoffee/travis/galen-travis.enc
+  -out VS-FourthCoffee/travis/galen-travis.pem
 - chmod 600 VS-FourthCoffee/travis/galen-travis.pem
 - cd VS-FourthCoffee
 - bundle exec berks install
 - bundle exec berks upload -c travis/berkshelf.json
+before_install:
+- openssl aes-256-cbc -K $encrypted_df2807d940e2_key -iv $encrypted_df2807d940e2_iv
+  -in galen-travis.pem.enc -out galen-travis.pem -d
