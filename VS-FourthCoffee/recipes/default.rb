@@ -29,7 +29,7 @@ end
 windows_zipfile "#{node['fourthcoffee']['install_path']}" do
   source "#{Chef::Config[:file_cache_path]}\\fourthcoffee_site.zip"
   action :unzip
-  not_if? {::File.exists?(node['fourthcoffee']['install_path']/Default.cshtml)}
+  not_if? {::File.exists?('C:/inetpub/fourthcoffee/Default.cshtml')}
 end
 
 
