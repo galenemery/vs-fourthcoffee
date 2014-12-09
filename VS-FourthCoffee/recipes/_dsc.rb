@@ -34,7 +34,7 @@ cookbook_file "fourthcoffee_site.zip" do
   action :create_if_missing
 end
 
-dsc_resource 'get-dsc-resource-kit' do
+dsc_resource 'unzip-fourthcoffee-site' do
   resource_name :archive
   property :ensure, 'Present'
   property :path, "#{Chef::Config[:file_cache_path]}\\fourthcoffee_site.zip"
