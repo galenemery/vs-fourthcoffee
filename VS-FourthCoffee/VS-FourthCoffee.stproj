@@ -19,35 +19,38 @@
     <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="fourthcoffee\attributes\default.rb" />
-    <Compile Include="fourthcoffee\metadata.rb" />
-    <Compile Include="fourthcoffee\recipes\default.rb" />
-    <Compile Include="fourthcoffee\recipes\_classic.rb" />
-    <Compile Include="fourthcoffee\recipes\_dsc.rb" />
-    <Compile Include="fourthcoffee\test\integration\default\serverspec\default_spec.rb" />
-    <Compile Include="fourthcoffee\test\integration\default\serverspec\spec_helper.rb" />
+    <Compile Include="attributes\default.rb" />
+    <Compile Include="metadata.rb" />
+    <Compile Include="recipes\default.rb" />
+    <Compile Include="recipes\_classic.rb" />
+    <Compile Include="recipes\_dsc.rb" />
+    <Compile Include="test\integration\default\serverspec\default_spec.rb" />
+    <Compile Include="test\integration\default\serverspec\spec_helper.rb" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="fourthcoffee\.gitattributes" />
-    <Content Include="fourthcoffee\.gitignore" />
-    <Content Include="fourthcoffee\.kitchen.yml" />
-    <Content Include="fourthcoffee\Berksfile" />
-    <Content Include="fourthcoffee\Berksfile.lock" />
-    <Content Include="fourthcoffee\CHANGELOG.md" />
-    <Content Include="fourthcoffee\files\default\fourthcoffee\fourthcoffee_site.zip" />
-    <Content Include="fourthcoffee\README.md" />
+    <Content Include=".gitattributes" />
+    <Content Include=".gitignore" />
+    <Content Include=".kitchen.yml" />
+    <Content Include=".travis.yml" />
+    <Content Include="Berksfile" />
+    <Content Include="Berksfile.lock" />
+    <Content Include="CHANGELOG.md" />
+    <Content Include="files\default\fourthcoffee\fourthcoffee_site.zip" />
+    <Content Include="Rakefile" />
+    <Content Include="README.md" />
+    <Content Include="test\support\Gemfile" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="fourthcoffee" />
-    <Folder Include="fourthcoffee\attributes" />
-    <Folder Include="fourthcoffee\files" />
-    <Folder Include="fourthcoffee\files\default" />
-    <Folder Include="fourthcoffee\files\default\fourthcoffee" />
-    <Folder Include="fourthcoffee\recipes" />
-    <Folder Include="fourthcoffee\test" />
-    <Folder Include="fourthcoffee\test\integration" />
-    <Folder Include="fourthcoffee\test\integration\default" />
-    <Folder Include="fourthcoffee\test\integration\default\serverspec" />
+    <Folder Include="attributes" />
+    <Folder Include="files" />
+    <Folder Include="files\default" />
+    <Folder Include="files\default\fourthcoffee" />
+    <Folder Include="recipes" />
+    <Folder Include="test" />
+    <Folder Include="test\integration" />
+    <Folder Include="test\integration\default" />
+    <Folder Include="test\integration\default\serverspec" />
+    <Folder Include="test\support" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SapphireSteel Software\Sapphire_3_$(VisualStudioVersion)\Sapphire.targets" />
 </Project>
