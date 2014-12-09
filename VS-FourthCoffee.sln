@@ -8,7 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DEF11D37-89C4-40ED-B152-FCF67A3AAD5D}"
 	ProjectSection(SolutionItems) = preProject
 		.travis.yml = .travis.yml
-		VS-FourthCoffee\Rakefile = VS-FourthCoffee\Rakefile
+		berkshelf.json = berkshelf.json
+		Rakefile = Rakefile
+		VS-FourthCoffee\README.md = VS-FourthCoffee\README.md
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EE7D5895-C1AB-4B95-993A-ADA130F0B863}"
@@ -17,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "support", "support", "{7DCC
 	ProjectSection(SolutionItems) = preProject
 		VS-FourthCoffee\test\support\Gemfile = VS-FourthCoffee\test\support\Gemfile
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "deploy", "deploy", "{9F96D093-5532-4029-9362-70A0ED930071}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -35,5 +39,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{EE7D5895-C1AB-4B95-993A-ADA130F0B863} = {DEF11D37-89C4-40ED-B152-FCF67A3AAD5D}
 		{7DCCA288-67C5-4943-AF94-B43AFDE54F7C} = {EE7D5895-C1AB-4B95-993A-ADA130F0B863}
+		{9F96D093-5532-4029-9362-70A0ED930071} = {DEF11D37-89C4-40ED-B152-FCF67A3AAD5D}
 	EndGlobalSection
 EndGlobal

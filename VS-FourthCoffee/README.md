@@ -1,6 +1,6 @@
 Fourth Coffee Corporation of Seattle, Inc.
 ==========================================
-
+[![Build Status](https://travis-ci.org/galenemery/vs-fourthcoffee.svg?branch=master)](https://travis-ci.org/galenemery/vs-fourthcoffee)
 This cookbook is used as a demonstration with Microsoft Desired State Configuration.
 
 Fourth Coffee: http://msdn.microsoft.com/en-us/library/hh478190.aspx
