@@ -2,5 +2,7 @@ language: ruby
 rvm:
   - "1.9.3"
   - "2.0.0"
+gemfile:
+  - VS-FourthCoffee/test/support/Gemfile
 # uncomment this line if your project needs to run something other than `rake`:
 script: bundle exec foodcritic
