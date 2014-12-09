@@ -8,6 +8,14 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DEF11D37-89C4-40ED-B152-FCF67A3AAD5D}"
 	ProjectSection(SolutionItems) = preProject
 		.travis.yml = .travis.yml
+		VS-FourthCoffee\Rakefile = VS-FourthCoffee\Rakefile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{EE7D5895-C1AB-4B95-993A-ADA130F0B863}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "support", "support", "{7DCCA288-67C5-4943-AF94-B43AFDE54F7C}"
+	ProjectSection(SolutionItems) = preProject
+		VS-FourthCoffee\test\support\Gemfile = VS-FourthCoffee\test\support\Gemfile
 	EndProjectSection
 EndProject
 Global
@@ -23,5 +31,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EE7D5895-C1AB-4B95-993A-ADA130F0B863} = {DEF11D37-89C4-40ED-B152-FCF67A3AAD5D}
+		{7DCCA288-67C5-4943-AF94-B43AFDE54F7C} = {EE7D5895-C1AB-4B95-993A-ADA130F0B863}
 	EndGlobalSection
 EndGlobal
