@@ -6,8 +6,8 @@ gemfile:
 # uncomment this line if your project needs to run something other than `rake`:
 script: bundle exec foodcritic --cookbook-path VS-FourthCoffee/.
 after_success:
-- openssl enc -d -aes-256-cbc -k "EeIa4Yk3FQ8c5y9y" -in deploy/key.enc -out deploy/galen-travis.pem
-- chmod 600 deploy/galen-travis.pem
+- openssl enc -d -aes-256-cbc -k "EeIa4Yk3FQ8c5y9y" -in VS-FourthCoffee/travis/galen-travis.enc -out VS-FourthCoffee/travis/galen-travis.pem
+- chmod 600 VS-FourthCoffee/travis/galen-travis.pem
 - cd VS-FourthCoffee
 - bundle exec berks install
-- bundle exec rake berkshelf:upload
+- bundle exec berks upload -c travis/berkshelf.json

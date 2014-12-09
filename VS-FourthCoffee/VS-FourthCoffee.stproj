@@ -36,12 +36,15 @@
     <Content Include="CHANGELOG.md" />
     <Content Include="files\default\fourthcoffee\fourthcoffee_site.zip" />
     <Content Include="test\support\Gemfile" />
+    <Content Include="travis\berkshelf.json" />
+    <Content Include="travis\galen-travis.enc" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="attributes" />
     <Folder Include="files" />
     <Folder Include="files\default" />
     <Folder Include="files\default\fourthcoffee" />
+    <Folder Include="travis" />
     <Folder Include="recipes" />
     <Folder Include="test" />
     <Folder Include="test\integration" />
