@@ -26,11 +26,18 @@ cookbook_file "fourthcoffee\\fourthcoffee_site.zip" do
   action :create_if_missing
 end
 
+=begin
 dsc_resource 'unzip-fourthcoffee-site' do
   resource_name :archive
   property :ensure, 'Present'
   property :path, "#{Chef::Config[:file_cache_path]}\\fourthcoffee_site.zip"
   property :destination, "#{Chef::Config[:file_cache_path]}\\fourthcoffee_site"
+end
+=end
+
+windows_zipfile "#{Chef::Config[:file_cache_path]}\\fourthcoffee_site" do
+  source "#{Chef::Config[:file_cache_path]}\\fourthcoffee_site.zip"
+  action :unzip
 end
 
 remote_directory node['fourthcoffee']['install_path'] do
