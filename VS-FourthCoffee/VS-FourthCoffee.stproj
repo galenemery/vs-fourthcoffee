@@ -22,6 +22,7 @@
     <Compile Include="attributes\default.rb" />
     <Compile Include="metadata.rb" />
     <Compile Include="recipes\default.rb" />
+    <Compile Include="recipes\powershell.rb" />
     <Compile Include="recipes\_classic.rb" />
     <Compile Include="recipes\_dsc.rb" />
     <Compile Include="test\integration\default\serverspec\default_spec.rb" />

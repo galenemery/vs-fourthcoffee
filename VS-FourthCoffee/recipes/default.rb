@@ -26,16 +26,12 @@ cookbook_file "fourthcoffee_site.zip" do
   action :create_if_missing
 end
 
-windows_zipfile "#{Chef::Config[:file_cache_path]}\\fourthcoffee_site" do
+windows_zipfile "#{node['fourthcoffee']['install_path']}" do
   source "#{Chef::Config[:file_cache_path]}\\fourthcoffee_site.zip"
   action :unzip
+  not_if? {::File.exists?(node['fourthcoffee']['install_path']/Default.cshtml)}
 end
 
-remote_directory node['fourthcoffee']['install_path'] do
-  source "#{Chef::Config[:file_cache_path]}\\fourthcoffee_site"
-  # might need rights here
-  action :create
-end
 
 iis_pool 'FourthCoffee' do
   runtime_version "4.0"
