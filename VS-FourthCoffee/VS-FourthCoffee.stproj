@@ -28,6 +28,7 @@
     <Compile Include="test\integration\default\serverspec\spec_helper.rb" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".chefignore" />
     <Content Include=".gitattributes" />
     <Content Include=".kitchen.yml" />
     <Content Include="Berksfile" />
