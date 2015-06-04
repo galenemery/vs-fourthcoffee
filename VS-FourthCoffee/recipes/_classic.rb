@@ -19,6 +19,7 @@
 
 windows_feature 'IIS-WebServerRole' do
   action :install
+  all true
 end
 
 # Pre-requisite features for IIS-ASPNET45 that need to be installed first, in this order.

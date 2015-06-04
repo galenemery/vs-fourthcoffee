@@ -26,7 +26,7 @@ cookbook_file "fourthcoffee_site.zip" do
   action :create_if_missing
 end
 
-windows_zipfile "#{node['fourthcoffee']['install_path']}" do
+windows_zipfile node['fourthcoffee']['install_path'] do
   source "#{Chef::Config[:file_cache_path]}\\fourthcoffee_site.zip"
   action :unzip
   not_if {::File.exists?('C:/inetpub/fourthcoffee/Default.cshtml')}
